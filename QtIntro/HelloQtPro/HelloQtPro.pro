@@ -1,0 +1,4 @@
+TEMPLATE += app
+DEPENDPATH +=.
+INCLUDEPATH +=.
+SOURCES += main.cpp
