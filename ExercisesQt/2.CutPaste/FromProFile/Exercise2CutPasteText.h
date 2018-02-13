@@ -17,4 +17,4 @@ public slots:
 private:
 	Ui::Exercise2CutPasteTextClass ui;
 	QString text;
-}
+};
