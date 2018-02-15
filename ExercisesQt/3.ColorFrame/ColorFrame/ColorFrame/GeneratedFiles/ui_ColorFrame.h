@@ -83,12 +83,14 @@ public:
 
         redSlider = new QSlider(centralWidget);
         redSlider->setObjectName(QStringLiteral("redSlider"));
+        redSlider->setMaximum(255);
         redSlider->setOrientation(Qt::Horizontal);
 
         RedLayout->addWidget(redSlider);
 
         redSpinBox = new QSpinBox(centralWidget);
         redSpinBox->setObjectName(QStringLiteral("redSpinBox"));
+        redSpinBox->setMaximum(255);
 
         RedLayout->addWidget(redSpinBox);
 
@@ -105,12 +107,14 @@ public:
 
         greenSlider = new QSlider(centralWidget);
         greenSlider->setObjectName(QStringLiteral("greenSlider"));
+        greenSlider->setMaximum(255);
         greenSlider->setOrientation(Qt::Horizontal);
 
         GreenLayout->addWidget(greenSlider);
 
         greenSpinBox = new QSpinBox(centralWidget);
         greenSpinBox->setObjectName(QStringLiteral("greenSpinBox"));
+        greenSpinBox->setMaximum(255);
 
         GreenLayout->addWidget(greenSpinBox);
 
@@ -127,12 +131,14 @@ public:
 
         blueSlider = new QSlider(centralWidget);
         blueSlider->setObjectName(QStringLiteral("blueSlider"));
+        blueSlider->setMaximum(255);
         blueSlider->setOrientation(Qt::Horizontal);
 
         BlueLayout->addWidget(blueSlider);
 
         blueSpinBox = new QSpinBox(centralWidget);
         blueSpinBox->setObjectName(QStringLiteral("blueSpinBox"));
+        blueSpinBox->setMaximum(255);
 
         BlueLayout->addWidget(blueSpinBox);
 
