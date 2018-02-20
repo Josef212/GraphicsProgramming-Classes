@@ -11,14 +11,34 @@ DecimalBinary_conversor::DecimalBinary_conversor(QWidget *parent)
 
 void DecimalBinary_conversor::ToDecimal()
 {
-	unsigned int value = (unsigned int)ui.binarySpinBox->value();
+	long long n = (long long)ui.binarySpinBox->value();
 
-	ui.decimalSpinBox->setValue(value);
+	int decimalNumber = 0, i = 0, reminder;
+
+	while(n!=0)
+	{
+		reminder = n % 2;
+		n /= 10;
+		decimalNumber += reminder * pow(2, i);
+		++i;
+	}
+
+	ui.decimalSpinBox->setValue(decimalNumber);
 }
 
 void DecimalBinary_conversor::ToBinary()
 {
-	unsigned int value = (unsigned int)ui.decimalSpinBox->value();
+	long long n = (long long)ui.decimalSpinBox->value();
+	long long ret = 0;
+	int remainder, i = 1, step = 1;
 
-	ui.binarySpinBox->setValue(value);
+	while(n!=0)
+	{
+		remainder = n % 2;
+		n /= 2;
+		ret += remainder * i;
+		i *= 10;
+	}
+
+	ui.binarySpinBox->setValue(ret);
 }
