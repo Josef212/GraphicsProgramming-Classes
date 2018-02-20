@@ -48,7 +48,7 @@ public:
     {
         if (DisplaySave_imageClass->objectName().isEmpty())
             DisplaySave_imageClass->setObjectName(QStringLiteral("DisplaySave_imageClass"));
-        DisplaySave_imageClass->resize(646, 489);
+        DisplaySave_imageClass->resize(710, 480);
         DisplaySave_imageClass->setMinimumSize(QSize(500, 400));
         centralWidget = new QWidget(DisplaySave_imageClass);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
@@ -100,7 +100,7 @@ public:
         DisplaySave_imageClass->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(DisplaySave_imageClass);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 646, 21));
+        menuBar->setGeometry(QRect(0, 0, 710, 21));
         DisplaySave_imageClass->setMenuBar(menuBar);
         mainToolBar = new QToolBar(DisplaySave_imageClass);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));

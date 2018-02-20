@@ -16,7 +16,7 @@ public slots:
 	void OnLoadBtn();
 
 private:
-	void LoadImage(const char* path);
+	void LoadImage(QString filename);
 
 private:
 	Ui::DisplaySave_imageClass ui;
